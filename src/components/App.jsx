@@ -22,10 +22,10 @@ class App extends React.Component {
     return(
       <div>
         <Header/>
-          <Switch>
-            <Route exact path='/' render={()=><TicketList ticketList={this.state.masterTicketList} />} />
-            <Route path='/newticket' render={()=><NewTicketControl onNewTicketCreation={this.handleAddingNewTicketToList} />} />
-          </Switch>
+        <Switch>
+          <Route exact path='/' render={()=><TicketList ticketList={this.state.masterTicketList} />} />
+          <Route path='/newticket' render={()=><NewTicketControl onNewTicketCreation={this.handleAddingNewTicketToList} />} />
+        </Switch>
       </div>
     );
   }
